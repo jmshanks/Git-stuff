@@ -1,6 +1,6 @@
 package com.company;
 
-abstract class Bicycle extends Transport {
+ class Bicycle extends Transport {
 
     int numberOfTires;
     int numberOfGears;
@@ -17,17 +17,21 @@ abstract class Bicycle extends Transport {
 
         System.out.println("Bicycle: \n" +
                 "Tires: " + this.numberOfTires + "\n" +
-                "Gears: " + this.numberOfGears + "\n" +
-                "Max Speed: " + this.maxSpeed() + " mph." + "\n" +
-                "Time in ¼ Mile: " + time() + " seconds." + "\n");
+                "Gears: " + this.numberOfGears);
+                super.printStats();
 
 
     }
 
-    public double time() {
-        double distance = 1320;
-        return distance / maxSpeed();
-    }
+     public double time() {
+         return distance() / maxSpeed();
+     }
 
 
-}
+     @Override
+     public double maxSpeed() {
+         return 25;
+     }
+
+
+ }
