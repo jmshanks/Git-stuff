@@ -1,7 +1,5 @@
 package com.company;
 
-import org.jetbrains.annotations.Contract;
-
 public class App {
 
     public static void main(String[] args) {
