@@ -1,6 +1,6 @@
 package com.company;
 
-abstract class Car extends Transport {
+class Car extends Transport {
 
     String engineType;
     int numberOfDoors;
@@ -20,16 +20,19 @@ abstract class Car extends Transport {
         System.out.println("Car: \n" +
                 "Engine: " + this.engineType + "\n" +
                 "Tires: " + this.numberOfTires + "\n" +
-                "Number of doors: " + this.numberOfDoors + "\n" +
-                "Max Speed: " + this.maxSpeed() + " mph." + "\n" +
-                "Time in ¼ Mile: " + time() + " seconds." + "\n");
+                "Number of doors: " + this.numberOfDoors);
+                super.printStats();
 
 
     }
 
     public double time() {
-        double distance = 1320;
-        return distance / maxSpeed();
+        return distance() / maxSpeed();
+    }
+
+    @Override
+    public double maxSpeed() {
+        return 85;
     }
 
 
