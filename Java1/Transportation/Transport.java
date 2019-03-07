@@ -1,4 +1,3 @@
-@@ -0,0 +1,12 @@
 package com.company;
 
 public abstract class Transport {
@@ -7,7 +6,7 @@ public abstract class Transport {
 
     public abstract double maxSpeed();
 
-    public void distance(int i) {
+    protected void distance(int i) {
     }
 
 }
