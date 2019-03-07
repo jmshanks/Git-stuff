@@ -1,6 +1,6 @@
 package com.company;
 
-abstract class Feet extends Transport {
+class Feet extends Transport {
 
     public Feet() {
 
@@ -8,16 +8,21 @@ abstract class Feet extends Transport {
 
     void printStats() {
 
-        System.out.println("Feet: \n" +
-                "Max Speed: " + this.maxSpeed() + " mph." + "\n" +
-                "Time in ¼ Mile: " + time() + " seconds." + "\n");
-
-
+        System.out.println("Feet:");
+        super.printStats();
     }
 
+
+
+
+
     public double time() {
-        double distance = 1320;
-        return distance / maxSpeed();
+         return distance() / maxSpeed();
+    }
+
+    @Override
+    public double maxSpeed() {
+        return 6.68;
     }
 
 
