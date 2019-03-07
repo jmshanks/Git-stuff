@@ -1,4 +1,3 @@
-@@ -0,0 +1,44 @@
 package com.company;
 
 abstract class Car extends Transport {
@@ -8,20 +7,12 @@ abstract class Car extends Transport {
     int numberOfTires;
 
 
-    Car(Transport Car) {
-
-        super();
-        engineType = "NA-V8";
-        numberOfTires = 4;
-        numberOfDoors = 2;
-
-    }
-
     public Car() {
         super();
         engineType = "NA-V8";
         numberOfTires = 4;
         numberOfDoors = 2;
+
     }
 
     void printStats() {
