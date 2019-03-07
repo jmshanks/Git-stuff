@@ -1,5 +1,6 @@
-@@ -0,0 +1,54 @@
 package com.company;
+
+import org.jetbrains.annotations.Contract;
 
 public class App {
 
