@@ -1,4 +1,3 @@
-@@ -0,0 +1,41 @@
 package com.company;
 
 abstract class Bicycle extends Transport {
@@ -6,14 +5,6 @@ abstract class Bicycle extends Transport {
     int numberOfTires;
     int numberOfGears;
 
-
-    Bicycle(Transport Bicycle) {
-
-        super();
-        numberOfTires = 4;
-
-
-    }
 
     public Bicycle() {
         super();
