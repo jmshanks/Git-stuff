@@ -1,5 +1,7 @@
 package com.company;
 
+
+
 public class App {
 
     public static void main(String[] args) {
@@ -7,13 +9,9 @@ public class App {
         // Feet
         Feet feet = new Feet() {
 
-            @Override
-            public double maxSpeed() {
-                return 6.68;
-            }
         };
 
-        feet.distance(1320);
+        feet.distance();
 
         feet.printStats();
 
@@ -21,31 +19,22 @@ public class App {
         // Bicycle
         Bicycle bicycle = new Bicycle() {
 
-
-            @Override
-            public double maxSpeed() {
-                return 25;
-            }
         };
 
         bicycle.numberOfGears = 12;
         bicycle.numberOfTires = 2;
-        bicycle.distance(1320);
-
+        bicycle.distance();
         bicycle.printStats();
 
 
         // Car
         Car car = new Car() {
-            @Override
-            public double maxSpeed() {
-                return 85;
-            }
         };
+
         car.engineType = "NA-V8";
         car.numberOfDoors = 2;
         car.numberOfTires = 4;
-        car.distance(1320);
+        car.distance();
 
         car.printStats();
 
