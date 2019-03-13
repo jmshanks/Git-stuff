@@ -19,7 +19,7 @@ public class App {
         //Create 2 employees...
 
         //This one will use a constructor where I give it the base rate and commission
-        //                                          Pay,                          Comm,  ID,     StoreID,       Name,           Age
+        //                                          Pay,  Comm,  ID,StoreID,Name, Age
         Employee employee2 = new CommissionEmployee(3.00, 0.13, 002, 1, "Chirstie", 42);
 
         //This one will use the default base rate and commission.
