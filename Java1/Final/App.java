@@ -5,8 +5,7 @@ import javaonefinal.invoicestuff.LineItem;
 import javaonefinal.people.CommissionEmployee;
 import javaonefinal.people.Employee;
 import javaonefinal.people.Person;
-import static javaonefinal.people.CommissionEmployee.STARTING_COMMISSION;
-import static javaonefinal.people.CommissionEmployee.STARTING_RATE;
+
 
 
 public class App {
